@@ -1,10 +1,63 @@
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  font-size: 72px;
+  line-height: 84px;
+  text-transform: uppercase;
+  padding: 12px;
 }
 h2 {
   font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
 }
-h3 {
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
+h1,
+h2,
+h3,
+p {
+  color: white;
+  padding: 0 200px;
+}
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(/images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(60%);
+}
+
+.btn-branding {
+  color: #272142;
+  background-color: white;
+  padding: 18px 30px;
+  width: 200px;
+  border-radius: 50px;
   font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hero-text {
+  text-align: center;
+  position: relative;
 }
