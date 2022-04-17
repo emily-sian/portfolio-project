@@ -81,6 +81,18 @@ p {
   flex-direction: column;
   margin-top: -20px;
 }
+.footer {
+  color: white;
+  font-size: 16px;
+  color: white;
+  font-weight: 200;
+}
+i {
+  padding: 4px;
+}
+.navbar-brand {
+  font-family: "Roboto", sans-serif;
+}
 
 @media (max-width: 576px) {
   h1 {
@@ -95,5 +107,11 @@ p {
   .btn-branding {
     padding: 10px 15px;
     margin: 15px;
+  }
+  .footer {
+    font-size: 8px;
+  }
+  .social {
+    font-size: 30px;
   }
 }
