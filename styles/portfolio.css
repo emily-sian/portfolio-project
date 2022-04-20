@@ -1,14 +1,18 @@
 body {
   background: #141414;
 }
+
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 72px;
   line-height: 84px;
-  text-transform: uppercase;
   padding: 12px;
   letter-spacing: 0.1em;
+}
+.about h1 {
+  font-size: 64px;
+  line-height: 75px;
 }
 .hero h2 {
   font-family: "Roboto", sans-serif;
@@ -25,6 +29,9 @@ h1 {
   max-width: 60%;
   margin-left: auto;
   margin-right: auto;
+}
+.about p {
+  font-size: 18px;
 }
 p {
   font-family: "Roboto", sans-serif;
@@ -92,6 +99,22 @@ i {
 }
 .navbar-brand {
   font-family: "Roboto", sans-serif;
+}
+.about h2 {
+  font-family: "Roboto", sans-serif;
+  color: #f65282;
+  font-size: 18px;
+}
+.camera-details {
+  background: #2d2727;
+  padding: 18px;
+  border-radius: 4px;
+}
+.about .social {
+  color: #f65282;
+}
+.headshot {
+  filter: brightness(60%);
 }
 
 @media (max-width: 576px) {
