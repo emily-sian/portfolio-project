@@ -41,9 +41,37 @@
     <title>About Shelley White Photographer</title>
   </head>
   <body class="about">
+    <nav
+      class="navbar sticky-top navbar-expand-lg navbar-dark"
+      style="background-color: #141414"
+    >
+      <a class="navbar-brand ms-2 text-uppercase" href="#">Shelley White</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarNavAltMarkup"
+      >
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/index.html">Home</a>
+          <a class="nav-item nav-link active" href="#">About</a>
+          <a class="nav-item nav-link" href="#">Gallery</a>
+          <a class="nav-item nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
     <div class="container mt-5">
       <div class="row">
-        <div class="col d-flex justify-content-center">
+        <div class="col d-flex justify-content-center d-none d-md-block">
           <img src="/images/headshot.png" alt="" class="img-fluid headshot" />
         </div>
         <div class="col">
@@ -77,16 +105,38 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container mb-5">
       <div class="row">
-        <div class="col-3">
-          <img src="/images/car.png" alt="" class="img-fluid" />
+        <div class="col">
+          <img src="/images/car.png" alt="" class="img-fluid about-images" />
         </div>
-        <div class="col-3">
-          <img src="/images/gallery.png" alt="" class="img-fluid" />
+        <div class="col">
+          <img
+            src="/images/gallery.png"
+            alt=""
+            class="img-fluid about-images"
+          />
         </div>
-        <div class="col-3">
-          <img src="/images/cliffs.png" alt="" class="img-fluid" />
+        <div class="col">
+          <img src="/images/cliffs.png" alt="" class="img-fluid about-images" />
+        </div>
+      </div>
+    </div>
+    <div class="footer mb-3 text-uppercase">
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex align-items-center">Shelley White</div>
+          <div class="col d-flex align-items-center justify-content-center">
+            <div class="social">
+              <i class="fa-brands fa-facebook-square"></i
+              ><i class="fa-brands fa-instagram-square"></i
+              ><i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="col d-flex align-items-center justify-content-end">
+            <i class="fa-solid fa-copyright"></i>
+            Shelley White Photo
+          </div>
         </div>
       </div>
     </div>
