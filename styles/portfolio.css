@@ -11,6 +11,25 @@ h1 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+a {
+  color: white;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 200;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+p {
+  color: white;
+}
+i {
+  padding: 4px;
+}
 .about h1 {
   font-size: 64px;
   line-height: 75px;
@@ -34,19 +53,7 @@ h1 {
 .about p {
   font-size: 18px;
 }
-p {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 30px;
-  font-weight: 200;
-  font-style: normal;
-}
-h1,
-h2,
-h3,
-p {
-  color: white;
-}
+
 .hero {
   position: relative;
   display: flex;
@@ -95,13 +102,17 @@ p {
   color: white;
   font-weight: 200;
 }
-i {
-  padding: 4px;
-}
+
 .navbar-brand {
   font-family: "Roboto", sans-serif;
 }
-.about h2 {
+.about h2,
+.contact h2 {
+  font-family: "Roboto", sans-serif;
+  color: #f65282;
+  font-size: 18px;
+}
+.contact {
   font-family: "Roboto", sans-serif;
   color: #f65282;
   font-size: 18px;
@@ -117,12 +128,18 @@ i {
 .headshot {
   filter: brightness(60%);
 }
+.contact-details {
+  margin: 50px auto;
+}
 .gallery {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(12, 5vw);
   grid-gap: 15px;
-  margin: 30px 30px;
+}
+.gallery-container {
+  width: 60%;
+  margin: 0 auto;
 }
 .gallery-img {
   width: 100%;
@@ -155,12 +172,12 @@ i {
 }
 .gallery-item-5 {
   grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-end: 6;
   grid-row-start: 4;
   grid-row-end: 7;
 }
 .gallery-item-6 {
-  grid-column-start: 5;
+  grid-column-start: 6;
   grid-column-end: 10;
   grid-row-start: 4;
   grid-row-end: 7;
@@ -222,5 +239,9 @@ i {
   }
   .social {
     font-size: 30px;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
   }
 }
