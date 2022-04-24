@@ -1,7 +1,10 @@
+:root {
+  --branding-color: #ffffff;
+  --secondary-branding-color: #f65282;
+}
 body {
   background: #141414;
 }
-
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -11,8 +14,11 @@ h1 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-a {
-  color: white;
+.email-link {
+  color: var(--branding-color);
+}
+:hover.email-link {
+  color: var(--secondary-branding-color);
 }
 p {
   font-family: "Roboto", sans-serif;
@@ -25,10 +31,11 @@ h1,
 h2,
 h3,
 p {
-  color: white;
+  color: var(--branding-color);
 }
 i {
   padding: 4px;
+  color: var(--secondary-branding-color);
 }
 .about h1 {
   font-size: 64px;
@@ -52,6 +59,9 @@ i {
 }
 .about p {
   font-size: 18px;
+}
+.social a {
+  text-decoration: none;
 }
 
 .hero {
@@ -78,7 +88,7 @@ i {
 
 .btn-branding {
   color: #272142;
-  background-color: white;
+  background-color: var(--branding-color);
   padding: 18px 30px;
   width: 200px;
   border-radius: 50px;
@@ -97,24 +107,17 @@ i {
   margin-top: -20px;
 }
 .footer {
-  color: white;
+  color: var(--branding-color);
   font-size: 16px;
-  color: white;
   font-weight: 200;
 }
-
 .navbar-brand {
   font-family: "Roboto", sans-serif;
 }
 .about h2,
 .contact h2 {
   font-family: "Roboto", sans-serif;
-  color: #f65282;
-  font-size: 18px;
-}
-.contact {
-  font-family: "Roboto", sans-serif;
-  color: #f65282;
+  color: var(--secondary-branding-color);
   font-size: 18px;
 }
 .camera-details {
@@ -123,12 +126,12 @@ i {
   border-radius: 4px;
 }
 .about .social {
-  color: #f65282;
+  color: var(--secondary-branding-color);
 }
 .headshot {
   filter: brightness(60%);
 }
-.contact-details {
+.contact {
   margin: 50px auto;
 }
 .gallery {
@@ -238,10 +241,13 @@ i {
     font-size: 8px;
   }
   .social {
-    font-size: 30px;
+    font-size: 24px;
   }
   .gallery {
     display: flex;
     flex-direction: column;
+  }
+  .contact {
+    margin: 10px auto;
   }
 }
