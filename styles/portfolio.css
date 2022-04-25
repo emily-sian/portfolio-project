@@ -1,12 +1,14 @@
 :root {
   --branding-color: #ffffff;
   --secondary-branding-color: #f65282;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
 }
 body {
   background: #141414;
 }
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font);
   font-weight: bold;
   font-size: 72px;
   line-height: 84px;
@@ -14,14 +16,8 @@ h1 {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-.email-link {
-  color: var(--branding-color);
-}
-:hover.email-link {
-  color: var(--secondary-branding-color);
-}
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font);
   font-size: 14px;
   line-height: 30px;
   font-weight: 200;
@@ -37,18 +33,41 @@ i {
   padding: 4px;
   color: var(--secondary-branding-color);
 }
-.about h1 {
-  font-size: 64px;
-  line-height: 75px;
+.btn-branding {
+  color: #272142;
+  background-color: var(--branding-color);
+  padding: 18px 30px;
+  width: 200px;
+  border-radius: 50px;
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px;
+}
+.footer {
+  color: var(--branding-color);
+  font-size: 16px;
+  font-weight: 200;
+}
+.navbar-brand {
+  font-family: var(--primary-font);
+}
+.email-link {
+  color: var(--branding-color);
+}
+:hover.email-link {
+  color: var(--secondary-branding-color);
 }
 .hero h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font);
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 .hero p {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font);
   font-size: 18px;
   line-height: 30px;
   font-weight: 200;
@@ -57,13 +76,6 @@ i {
   margin-left: auto;
   margin-right: auto;
 }
-.about p {
-  font-size: 18px;
-}
-.social a {
-  text-decoration: none;
-}
-
 .hero {
   position: relative;
   display: flex;
@@ -85,20 +97,6 @@ i {
   background-position: center center;
   filter: brightness(60%);
 }
-
-.btn-branding {
-  color: #272142;
-  background-color: var(--branding-color);
-  padding: 18px 30px;
-  width: 200px;
-  border-radius: 50px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 30px;
-}
 .hero-text {
   text-align: center;
   position: relative;
@@ -106,33 +104,41 @@ i {
   flex-direction: column;
   margin-top: -20px;
 }
-.footer {
-  color: var(--branding-color);
-  font-size: 16px;
-  font-weight: 200;
+.about p {
+  font-size: 18px;
 }
-.navbar-brand {
-  font-family: "Roboto", sans-serif;
+.about h1 {
+  font-size: 64px;
+  line-height: 75px;
+}
+.about .social {
+  color: var(--secondary-branding-color);
+}
+.social a {
+  text-decoration: none;
 }
 .about h2,
 .contact h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font);
   color: var(--secondary-branding-color);
   font-size: 18px;
+}
+.contact {
+  margin: 50px auto;
 }
 .camera-details {
   background: #2d2727;
   padding: 18px;
   border-radius: 4px;
 }
-.about .social {
-  color: var(--secondary-branding-color);
-}
 .headshot {
   filter: brightness(60%);
 }
-.contact {
-  margin: 50px auto;
+.mini-gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 5vw);
+  grid-gap: 15px;
 }
 .gallery {
   display: grid;
