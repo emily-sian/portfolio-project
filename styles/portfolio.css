@@ -54,7 +54,7 @@ i {
 .navbar-brand {
   font-family: var(--primary-font);
 }
-.email-link {
+.contact-link {
   color: var(--branding-color);
 }
 :hover.email-link {
@@ -255,5 +255,8 @@ i {
   }
   .contact {
     margin: 10px auto;
+  }
+  .camera-details {
+    font-size: 14px;
   }
 }
